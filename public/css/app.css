@@ -22220,6 +22220,12 @@ nav .nav-link:hover {
   color: #cda45d !important;
 }
 
+.btn {
+  color: white;
+  border-radius: 20px;
+  border: solid 2px #cda45d;
+}
+
 nav .btn:hover {
   background-color: #cda45d;
   color: white;
