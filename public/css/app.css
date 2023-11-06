@@ -22188,6 +22188,8 @@ button {
 
 header {
   position: sticky;
+  height: 1000px;
+  width: 100%;
 }
 
 .bookTable {
@@ -22200,7 +22202,7 @@ header {
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 1000px;
   z-index: -1;
   position: absolute;
   filter: brightness(50%);
@@ -22313,6 +22315,12 @@ nav .btn:hover {
   .headerText .bookTable {
     margin-right: 0px !important;
   }
+}
+.resto {
+  background-image: url("../img/about-bg.jpg");
+  width: 100%;
+  height: 750px;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=app.css.map */
