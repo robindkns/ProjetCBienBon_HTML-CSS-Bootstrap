@@ -22204,4 +22204,17 @@ h1, .h1 {
   z-index: 0;
 }
 
+nav .nav-link:hover {
+  color: #cda45d !important;
+}
+
+.actif {
+  color: #cda45d !important;
+}
+
+nav .btn:hover {
+  background-color: #cda45d;
+  color: white;
+}
+
 /*# sourceMappingURL=app.css.map */
