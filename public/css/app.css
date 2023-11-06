@@ -22262,24 +22262,25 @@ nav .btn:hover {
   z-index: 0;
 }
 .playButton i {
-  position: absolute;
   background-color: white;
   border-radius: 50%;
   z-index: 1;
   margin-left: 0.7%;
   margin-top: 0.7%;
   font-size: 65px;
+  position: absolute;
 }
 .playButton .loading {
   border: 2px solid #cda45d;
   opacity: 0.5;
   color: #cda45d;
-  width: 6%;
-  height: 13%;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+  box-shadow: 0 0 0 0.2em rgba(204, 163, 94, 0.5);
 }
 
 @media (max-width: 1023px) {
