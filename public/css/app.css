@@ -22296,5 +22296,22 @@ nav .btn:hover {
     font-size: 35px !important;
   }
 }
+@media (max-width: 767px) {
+  .navBar h1, .navBar .h1 {
+    margin-left: -10%;
+  }
+  .headerText {
+    padding-top: 140px;
+  }
+  .headerText h1, .headerText .h1 {
+    font-size: 25px !important;
+  }
+  .headerText p {
+    font-size: 20px;
+  }
+  .headerText .bookTable {
+    margin-right: 0px !important;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
