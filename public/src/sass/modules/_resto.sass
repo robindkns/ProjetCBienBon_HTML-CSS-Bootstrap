@@ -1,5 +1,51 @@
 .resto
+    height: 750px
+    width: 100%
+    position: absolute
+
+.restoBG
     background-image: url("../img/about-bg.jpg")
     width: 100%
     height: 750px
     background-size: cover
+    filter: brightness(30%)
+    z-index: -1
+    position: absolute
+
+.restoSection
+    display: flex
+    width: 90%
+    height: 680px
+    z-index: 0
+    color: white
+    padding-top: 10%
+    margin: auto 
+
+.txtResto
+    width: 50%
+    h2
+        font-family: 'Playfair Display', serif
+    #subTitle
+        font-style: italic
+    p
+        i
+            border: 1px solid $ocre
+            border-radius: 50%
+            padding: 0.5%
+
+.imgResto
+    width: 50%
+    background-image: url("../img/about.jpg")
+    background-size: cover
+    border: 4px solid #383737
+
+@media (max-width: 1023px)
+    .restoSection
+        flex-direction: column-reverse
+        height: 1400px
+        padding-top: 0%
+    .txtResto
+        width: 100%
+    .imgResto
+        width: 100%
+        height: 600px
