@@ -301,48 +301,30 @@
     <section class="reservation">
         <div class="sousTitre"><h6>RESERVATION</h6><div id="ligne"></div></div>
             <h1>Book a Table</h1>
-            <form class="row g-3 needs-validation pt-5" novalidate>
-                <div class="col-md-4 position-relative">
-                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Your Name" required>
-                    <div class="valid-tooltip">
-                        Looks good!
-                    </div>
+            <form class="row g-3 pt-5">
+                <div class="col-md-4 position-relative boxForm">
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Your Name">
                 </div>
-                <div class="col-md-4 position-relative">
-                    <input type="email" class="form-control" id="validationTooltip02" placeholder="Your Email" required>
-                    <div class="valid-tooltip">
-                        Looks good!
-                    </div>
+                <div class="col-md-4 position-relative boxForm">
+                    <input type="email" class="form-control" id="validationTooltip02" placeholder="Your Email">
                 </div>
-                <div class="col-md-4 position-relative">
-                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Your Phone" aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                            Please choose a unique and valid username.
-                        </div>
+                <div class="col-md-4 position-relative boxForm">
+                        <input type="number" class="form-control" id="validationTooltipUsername" placeholder="Your Phone">
                 </div>
-                <div class="col-md-4 position-relative">
-                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Date" required>
-                    <div class="invalid-tooltip">
-                        Please provide a valid city.
-                    </div>
+                <div class="col-md-4 position-relative boxForm">
+                    <input type="date" class="form-control" id="validationTooltip03" placeholder="Date">
                 </div>
-                <div class="col-md-4 position-relative">
-                    <input type="text" class="form-control" id="validationTooltip04" placeholder="Time" required>
-                    <div class="invalid-tooltip">
-                        Please select a valid state.
-                    </div>
+                <div class="col-md-4 position-relative boxForm">
+                    <input type="datetime" class="form-control" id="validationTooltip04" placeholder="Time">
                 </div>
-                <div class="col-md-4 position-relative">
-                    <input type="text" class="form-control" id="validationTooltip05" placeholder="# of People" required>
-                    <div class="invalid-tooltip">
-                        Please provide a valid zip.
-                    </div>
+                <div class="col-md-4 position-relative boxForm">
+                    <input type="number" class="form-control" id="validationTooltip05" placeholder="# of People">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 boxForm">
                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" style="height: 150px;"></textarea>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Book a Table</button>
+                    <button class="btn" type="submit">Book a Table</button>
                 </div>
                 </form>
     </section>
