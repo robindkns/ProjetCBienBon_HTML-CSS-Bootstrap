@@ -22597,10 +22597,42 @@ nav .btn:hover {
   color: #cda45d;
   font-family: "Playfair Display", serif;
 }
+.carouselDiv div p {
+  margin-top: 2%;
+}
 .carouselDiv div span {
   font-weight: bolder;
   font-size: 25px;
   text-decoration: underline #cda45d;
+}
+
+@media (max-width: 1023px) {
+  .carouselDiv {
+    flex-direction: column;
+  }
+  .carouselDiv div {
+    width: 100%;
+    margin-top: 3%;
+  }
+  .events {
+    height: 1050px;
+  }
+  .bgEvents {
+    height: 1050px;
+  }
+}
+@media (max-width: 767px) {
+  .carouselDiv div {
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  .events {
+    height: 950px;
+  }
+  .bgEvents {
+    height: 950px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
