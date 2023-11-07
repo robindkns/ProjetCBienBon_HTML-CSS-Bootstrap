@@ -107,15 +107,15 @@
         <h1>Check Our Tasty Menu</h1>
         <div>
             <p class="d-flex gap-5 justify-content-center pt-5">
-                <a class="menuBtn actif" data-bs-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">All</a>
+                <a class="menuBtn active actif" data-bs-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">All</a>
                 <a class="menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Starters</a>
                 <a class="menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Salads</a>
                 <a class="menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">Specialty</a>
             </p>
             <div class="row">
                 <div class="col">
-                <div class="collapse multi-collapse menuCollapsed" id="multiCollapseExample1">
-                    <div class="dish">
+                <div class="menuCollapsed" id="multiCollapseExample1">
+                    <div class="dish" id="multiCollapseExample2">
                         <div class="imgMenu">
                             <img src="./public/img/menu/lobster-bisque.jpg">
                         </div>
@@ -127,7 +127,7 @@
                             $5.95
                         </div>
                     </div>
-                    <div class="dish">
+                    <div class="dish" id="multiCollapseExample2">
                         <div class="imgMenu">
                             <img src="./public/img/menu/cake.jpg">
                         </div>
@@ -139,7 +139,7 @@
                             $7.95
                         </div>
                     </div>
-                    <div class="dish">
+                    <div class="dish" id="multiCollapseExample4">
                         <div class="imgMenu">
                             <img src="./public/img/menu/tuscan-grilled.jpg">
                         </div>
@@ -151,7 +151,7 @@
                             $9.95
                         </div>
                     </div>
-                    <div class="dish">
+                    <div class="dish" id="multiCollapseExample3">
                         <div class="imgMenu">
                             <img src="./public/img/menu/greek-salad.jpg">
                         </div>
@@ -163,7 +163,7 @@
                             $9.95
                         </div>
                     </div>
-                    <div class="dish">
+                    <div class="dish" id="multiCollapseExample4">
                         <div class="imgMenu">
                             <img src="./public/img/menu/lobster-roll.jpg">
                         </div>
@@ -178,8 +178,8 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="collapse multi-collapse menuCollapsed" id="multiCollapseExample1">
-                        <div class="dish">
+                    <div class="menuCollapsed" id="multiCollapseExample1">
+                        <div class="dish" id="multiCollapseExample4">
                             <div class="imgMenu">
                                 <img src="./public/img/menu/bread-barrel.jpg">
                             </div>
@@ -191,7 +191,7 @@
                                 $6.95
                             </div>
                         </div>
-                        <div class="dish">
+                        <div class="dish" id="multiCollapseExample3">
                             <div class="imgMenu">
                                 <img src="./public/img/menu/caesar.jpg">
                             </div>
@@ -203,7 +203,7 @@
                                 $8.95
                             </div>
                         </div>
-                        <div class="dish">
+                        <div class="dish" id="multiCollapseExample2">
                             <div class="imgMenu">
                                 <img src="./public/img/menu/mozzarella.jpg">
                             </div>
@@ -215,7 +215,7 @@
                                 $4.95
                             </div>
                         </div>
-                        <div class="dish">
+                        <div class="dish" id="multiCollapseExample3">
                             <div class="imgMenu">
                                 <img src="./public/img/menu/spinach-salad.jpg">
                             </div>
@@ -231,7 +231,65 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section>
+        <div class="bgEvents"></div>
+        <div class="events">
+            <div class="sousTitre"><h6>EVENTS</h6><div id="ligne"></div></div>
+            <h1>Organize Your Events in Our Restaurant</h1>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex gap-4 active carouselDiv">
+                        <div><img src="./public/img/event-birthday.jpg" class="d-block w-100" alt="..."></div>
+                        <div>
+                            <h3>Birthday Parties</h3>
+                            <span>$189</span>
+                            <p>
+                                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptate nesciunt nam repellendus animi necessitatibus magnam culpa temporibus.</i>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit.<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit lorem, ipsum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex gap-4 carouselDiv">
+                        <div><img src="./public/img/event-private.jpg" class="d-block w-100" alt="..."></div>
+                        <div><h3>Private Parties</h3>
+                            <span>$290</span>
+                            <p>
+                                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptate nesciunt nam repellendus animi necessitatibus magnam culpa temporibus.</i>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit.<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit lorem, ipsum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex gap-4 carouselDiv">
+                        <div><img src="./public/img/event-custom.jpg" class="d-block w-100" alt="..."></div>
+                        <div>
+                            <h3>Custom Parties</h3>
+                            <span>$99</span>
+                            <p>
+                                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptate nesciunt nam repellendus animi necessitatibus magnam culpa temporibus.</i>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit.<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat<br><br><br>
+                                Ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit lorem, ipsum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
