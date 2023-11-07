@@ -22394,8 +22394,13 @@ nav .btn:hover {
   flex-direction: column;
   background-color: #0b0b09;
   width: 100%;
-  height: 500px;
+  height: 550px;
   padding: 5%;
+}
+.whyUs h1, .whyUs .h1 {
+  font-family: "Playfair Display", serif;
+  color: #cda45d;
+  font-weight: bold;
 }
 
 .sousTitre {
@@ -22406,12 +22411,45 @@ nav .btn:hover {
 .sousTitre h6, .sousTitre .h6 {
   color: #6d6d6c;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 #ligne {
   height: 0.5px;
   width: 5%;
   border: 1px solid #484847;
+}
+
+.gridUs {
+  display: grid;
+  padding-top: 4%;
+  grid-template-columns: auto auto auto;
+  gap: 5%;
+}
+.gridUs div {
+  background-color: #1a1814;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.gridUs div .numBoxUs {
+  color: #cda45d;
+  font-weight: bold;
+  font-size: 27px;
+}
+.gridUs div .titleBoxUs {
+  font-weight: 500;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+.gridUs div p {
+  color: #6d6d6c;
 }
 
 /*# sourceMappingURL=app.css.map */
