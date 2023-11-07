@@ -22466,4 +22466,13 @@ nav .btn:hover {
   color: white;
 }
 
+@media (max-width: 1023px) {
+  .whyUs {
+    height: 1100px;
+  }
+  .gridUs {
+    grid-template-columns: auto;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
