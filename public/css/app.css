@@ -22452,4 +22452,18 @@ nav .btn:hover {
   color: #6d6d6c;
 }
 
+.gridUs div:hover {
+  background-color: #cda45d;
+  padding-bottom: 7%;
+}
+.gridUs div:hover .numBoxUs {
+  color: white;
+}
+.gridUs div:hover .titleBoxUs {
+  color: white;
+}
+.gridUs div:hover p {
+  color: white;
+}
+
 /*# sourceMappingURL=app.css.map */
