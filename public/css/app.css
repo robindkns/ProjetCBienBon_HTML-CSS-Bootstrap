@@ -22474,5 +22474,16 @@ nav .btn:hover {
     grid-template-columns: auto;
   }
 }
+.menu {
+  background-color: #1a1814;
+  width: 100%;
+  height: 800px;
+  padding: 5%;
+}
+.menu h1, .menu .h1 {
+  font-family: "Playfair Display", serif;
+  color: #cda45d;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=app.css.map */
