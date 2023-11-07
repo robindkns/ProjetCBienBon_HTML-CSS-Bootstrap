@@ -22539,6 +22539,24 @@ nav .btn:hover {
   font-weight: 500;
 }
 
+@media (max-width: 1439px) {
+  .menu {
+    height: 1550px;
+  }
+}
+@media (max-width: 1023px) {
+  .menu {
+    height: 1250px;
+  }
+}
+@media (max-width: 767px) {
+  #space {
+    letter-spacing: 0px;
+  }
+  .dish {
+    flex-wrap: nowrap;
+  }
+}
 .events {
   width: 100%;
   height: 850px;
@@ -22565,6 +22583,8 @@ nav .btn:hover {
 }
 
 .carouselDiv {
+  display: flex;
+  gap: 2%;
   width: 100%;
   margin-top: 5%;
   padding-bottom: 5%;
