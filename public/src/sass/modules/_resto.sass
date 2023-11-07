@@ -1,10 +1,10 @@
 .resto
     height: 750px
     width: 100%
-    position: absolute
 
 .restoBG
     background-image: url("../img/about-bg.jpg")
+    background-attachment: fixed
     width: 100%
     height: 750px
     background-size: cover
@@ -25,6 +25,7 @@
     width: 50%
     h2
         font-family: 'Playfair Display', serif
+        font-weight: bold
     #subTitle
         font-style: italic
     p
@@ -40,12 +41,19 @@
     border: 4px solid #383737
 
 @media (max-width: 1023px)
+    .resto
+        height: 1000px
+    .restoBG
+        height: 1000px
     .restoSection
         flex-direction: column-reverse
-        height: 1400px
-        padding-top: 0%
+        padding-top: 10%
+        height: 100%
+        gap: 5%
+
     .txtResto
         width: 100%
+        height: 100%
     .imgResto
         width: 100%
-        height: 600px
+        height: 100%
