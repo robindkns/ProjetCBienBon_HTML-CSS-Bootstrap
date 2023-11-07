@@ -22182,6 +22182,10 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
+a:hover {
+  color: #cda45d !important;
+}
+
 header {
   height: 1000px;
   width: 100%;
@@ -22236,6 +22240,7 @@ nav .btn:hover {
   display: grid;
   grid-template-columns: auto auto;
   padding-top: 5%;
+  font-family: "Poppins", sans-serif;
 }
 
 .title {
@@ -22477,13 +22482,60 @@ nav .btn:hover {
 .menu {
   background-color: #1a1814;
   width: 100%;
-  height: 800px;
+  height: 900px;
   padding: 5%;
 }
 .menu h1, .menu .h1 {
   font-family: "Playfair Display", serif;
   color: #cda45d;
   font-weight: bold;
+}
+
+.menuBtn {
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5%;
+}
+
+.menuCollapsed {
+  width: 100%;
+}
+
+.dish {
+  color: white;
+  display: flex;
+  margin-bottom: 5%;
+}
+.dish img {
+  width: 70%;
+  border-radius: 50%;
+  border: 5px solid #383737;
+}
+.dish span {
+  color: #6d6d6c;
+}
+
+.imgMenu {
+  width: 15%;
+}
+
+.txtMenu {
+  width: 70%;
+}
+
+.prixMenu {
+  width: 15%;
+  color: #cda45d;
+  font-weight: bold;
+}
+
+#space {
+  letter-spacing: 1px;
+}
+
+#italic {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=app.css.map */
