@@ -22645,6 +22645,14 @@ nav .btn:hover {
   color: #cda45d;
   font-weight: bold;
 }
+.reservation div button {
+  background-color: #cda45d;
+}
+
+.reservation div button:hover {
+  background-color: rgba(205, 164, 93, 0.6549019608);
+  color: white;
+}
 
 .sousTitre {
   display: flex;
