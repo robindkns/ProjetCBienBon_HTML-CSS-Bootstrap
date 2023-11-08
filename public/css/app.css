@@ -23136,7 +23136,6 @@ nav .btn:hover {
   background-color: #cda45d;
   color: white;
   z-index: 1;
-  margin-right: 10px;
 }
 
 .networksFooter {
@@ -23157,6 +23156,13 @@ nav .btn:hover {
 }
 .copyright p {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .boxFooter {
+    gap: 0%;
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
