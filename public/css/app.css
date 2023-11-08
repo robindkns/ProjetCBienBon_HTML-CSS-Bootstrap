@@ -22369,6 +22369,11 @@ nav .btn:hover {
   background-image: url("../img/about.jpg");
   background-size: cover;
   border: 4px solid #383737;
+  transition: transform 0.2s ease-out;
+}
+
+.imgResto:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1023px) {
