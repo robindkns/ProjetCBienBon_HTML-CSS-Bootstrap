@@ -22831,6 +22831,14 @@ nav .btn:hover {
   transform: scale(1.2);
 }
 
+@media (max-width: 1023px) {
+  .gridGallery {
+    grid-template-columns: auto auto auto;
+  }
+  .gridGallery div {
+    height: 180px;
+  }
+}
 .sousTitre {
   display: flex;
   align-items: center;
