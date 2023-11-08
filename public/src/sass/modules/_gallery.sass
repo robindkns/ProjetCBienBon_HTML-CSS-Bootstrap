@@ -1,0 +1,38 @@
+.sousTitre
+    display: flex
+    align-items: center
+    gap: 10px
+    h6
+        color: #6d6d6c
+        margin-bottom: 0px
+        font-weight: bold
+
+.galleryTitle
+    padding: 5%
+    h1
+        font-family: 'Playfair Display', serif
+        color: $ocre
+        font-weight: bold
+
+.gallery
+    background-color: #0b0b09
+    color: white
+    width: 100%
+    height: 800px
+
+.gridGallery
+    display: grid
+    width: 95%
+    margin: auto
+    grid-template-columns: 25% 25% 25% 25%
+    div
+        height: 270px
+        border-right: 5px solid #342f26
+        border-bottom: 5px solid #342f26
+        overflow: hidden
+    img
+        width: 100%
+        height: 100%
+        transition: transform 0.2s ease-out
+    img:hover
+        transform: scale(1.2)
