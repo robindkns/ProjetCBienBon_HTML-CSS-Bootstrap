@@ -23078,5 +23078,86 @@ nav .btn:hover {
     width: 100%;
   }
 }
+.boxFooter {
+  background-color: #0d0b09;
+  padding: 4%;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  gap: 12%;
+}
+.boxFooter a {
+  text-decoration: none;
+}
+.boxFooter ul {
+  padding: 10%;
+}
+.boxFooter ul li {
+  list-style-type: ">  ";
+  color: white;
+  margin-bottom: 10%;
+}
+.boxFooter ul li::marker {
+  color: #cda45d;
+}
+.boxFooter h4, .boxFooter .h4 {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.boxFooter h3, .boxFooter .h3 {
+  color: white;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.boxFooter p {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+.boxFooter div i {
+  margin-right: 5%;
+  background-color: #27251f;
+  padding: 8%;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.boxInput {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 25%;
+  height: 10%;
+  background-color: #27251f;
+  position: absolute;
+  z-index: 0;
+}
+
+.btnInput {
+  border: 1px solid #cda45d;
+  border-radius: 20px;
+  height: 20%;
+  background-color: #cda45d;
+  color: white;
+  z-index: 0;
+}
+
+.networksFooter {
+  display: flex;
+}
+
+#news {
+  font-family: "Open Sans", sans-serif;
+}
+
+.copyright {
+  background-color: black;
+  display: flex;
+  height: 80px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.copyright p {
+  margin: 0;
+}
 
 /*# sourceMappingURL=app.css.map */
