@@ -23089,6 +23089,9 @@ nav .btn:hover {
 .boxFooter a {
   text-decoration: none;
 }
+.boxFooter a:hover {
+  color: #cda45d !important;
+}
 .boxFooter ul {
   padding: 10%;
 }
@@ -23098,6 +23101,9 @@ nav .btn:hover {
   margin-bottom: 10%;
 }
 .boxFooter ul li::marker {
+  color: #cda45d;
+}
+.boxFooter ul li:hover {
   color: #cda45d;
 }
 .boxFooter h4, .boxFooter .h4 {
@@ -23136,6 +23142,11 @@ nav .btn:hover {
   background-color: #cda45d;
   color: white;
   z-index: 1;
+}
+
+input:hover {
+  background-color: rgba(205, 164, 93, 0.6549019608);
+  color: white;
 }
 
 .networksFooter {
