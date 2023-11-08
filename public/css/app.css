@@ -22678,5 +22678,25 @@ nav .btn:hover {
     height: 700px;
   }
 }
+.sousTitre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sousTitre h6, .sousTitre .h6 {
+  color: #6d6d6c;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.testimonials {
+  padding: 5%;
+  background-color: #1a1814;
+}
+.testimonials h1, .testimonials .h1 {
+  font-family: "Playfair Display", serif;
+  color: #cda45d;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=app.css.map */
