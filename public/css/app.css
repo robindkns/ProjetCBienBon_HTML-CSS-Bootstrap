@@ -22673,4 +22673,10 @@ nav .btn:hover {
   color: rgba(237, 202, 141, 0.6196078431);
 }
 
+@media (max-width: 767px) {
+  .reservation {
+    height: 700px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
