@@ -23060,4 +23060,23 @@ nav .btn:hover {
   color: white;
 }
 
+@media (max-width: 1023px) {
+  .contact {
+    height: 1450px;
+  }
+  .contactBox {
+    flex-direction: column;
+  }
+  .infosContact {
+    width: 100%;
+  }
+  .infosContact div {
+    padding-bottom: 2%;
+  }
+  .formContact {
+    padding-top: 10%;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
