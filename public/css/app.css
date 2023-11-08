@@ -22625,13 +22625,13 @@ nav .btn:hover {
   .carouselDiv div {
     width: 100%;
     margin-top: 7%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   .events {
-    height: 950px;
+    height: 1050px;
   }
   .bgEvents {
-    height: 950px;
+    height: 1050px;
   }
 }
 .reservation {
@@ -22663,6 +22663,14 @@ nav .btn:hover {
   color: #6d6d6c;
   margin-bottom: 0px;
   font-weight: bold;
+}
+
+.boxForm input::placeholder {
+  color: rgba(237, 202, 141, 0.6196078431);
+}
+
+.boxForm textarea::placeholder {
+  color: rgba(237, 202, 141, 0.6196078431);
 }
 
 /*# sourceMappingURL=app.css.map */
