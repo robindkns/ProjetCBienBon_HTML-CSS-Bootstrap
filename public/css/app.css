@@ -22870,6 +22870,7 @@ nav .btn:hover {
   background-image: url("../img/chefs/chefs-1.jpg");
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .chef1:before {
@@ -22891,6 +22892,7 @@ nav .btn:hover {
   background-image: url("../img/chefs/chefs-2.jpg");
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .chef2:before {
@@ -22912,6 +22914,7 @@ nav .btn:hover {
   background-image: url("../img/chefs/chefs-3.jpg");
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .chef3:before {
@@ -22942,6 +22945,15 @@ nav .btn:hover {
   gap: 5%;
   margin-top: 3%;
   justify-content: center;
+}
+
+@keyframes textApparition {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 75%);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

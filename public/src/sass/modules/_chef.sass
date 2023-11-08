@@ -31,6 +31,7 @@
     background-image: url("../img/chefs/chefs-1.jpg")
     background-size: cover
     position: relative
+    overflow: hidden
 
 .chef1:before 
     content: ''
@@ -50,6 +51,7 @@
     background-image: url("../img/chefs/chefs-2.jpg")
     background-size: cover
     position: relative
+    overflow: hidden
 
 .chef2:before 
     content: ''
@@ -68,6 +70,7 @@
     background-image: url("../img/chefs/chefs-3.jpg")
     background-size: cover
     position: relative
+    overflow: hidden
 
 .chef3:before 
     content: ''
@@ -83,14 +86,23 @@
     height: 60%
 
 .chefDescription
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    font-family: 'Playfair Display', serif
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        font-family: 'Playfair Display', serif
+        // transform: translate(0,100%)
+        // animation: textApparition linear 1s forwards
 
 .networks
     display: flex
     gap: 5%
     margin-top: 3%
     justify-content: center
+    
+
+@keyframes textApparition
+    0%
+        transform: translate(0,100%)
+    100%
+        transform: translate(0,75%)
