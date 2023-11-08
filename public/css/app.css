@@ -22938,6 +22938,7 @@ nav .btn:hover {
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
+  transform: translate(0, 75%);
 }
 
 .networks {
@@ -22968,7 +22969,58 @@ nav .btn:hover {
   background-color: #0b0b09;
   color: white;
   width: 100%;
-  height: 850px;
+  height: 1300px;
+}
+
+.contactBox {
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.infosContact {
+  width: 30%;
+  gap: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.infosContact div {
+  display: flex;
+  gap: 10%;
+}
+.infosContact div div {
+  flex-direction: column;
+}
+.infosContact div div h5, .infosContact div div .h5 {
+  font-family: "Poppins", sans-serif;
+}
+.infosContact div div span {
+  color: rgba(222, 193, 142, 0.5019607843);
+}
+
+.icons {
+  border-radius: 50%;
+  background-color: #cda45d;
+  padding: 20%;
+  width: 200%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.formContact {
+  width: 70%;
+}
+
+.contact div button:hover {
+  background-color: rgba(205, 164, 93, 0.6549019608);
+  color: white;
+}
+
+.contact div button {
+  background-color: #cda45d;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
