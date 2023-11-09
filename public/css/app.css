@@ -22310,6 +22310,8 @@ nav .btn:hover {
     margin-left: -10%;
   }
   .headerText {
+    display: flex;
+    flex-direction: column;
     padding-top: 140px;
   }
   .headerText h1, .headerText .h1 {
@@ -22499,7 +22501,12 @@ nav .btn:hover {
   text-decoration: none;
   color: white;
   font-family: "Playfair Display", serif;
-  margin-bottom: 5%;
+  border: none;
+  background-color: #1a1814;
+}
+
+.menuBtn:hover {
+  color: #cda45d;
 }
 
 .menuCollapsed {
@@ -22611,7 +22618,26 @@ nav .btn:hover {
   text-decoration: underline #cda45d;
 }
 
+#carouselExampleIndicators .carousel-indicators button {
+  border-radius: 50%;
+  width: 1.5%;
+  height: 15px;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: #cda45d;
+}
+
+@media (max-width: 1439px) {
+  #carouselExampleIndicators .carousel-indicators button {
+    width: 2.3%;
+    height: 15px;
+  }
+}
 @media (max-width: 1023px) {
+  #carouselExampleIndicators .carousel-indicators button {
+    height: 12px;
+  }
   .carouselDiv {
     flex-direction: column;
   }
@@ -22627,6 +22653,10 @@ nav .btn:hover {
   }
 }
 @media (max-width: 767px) {
+  #carouselExampleIndicators .carousel-indicators button {
+    height: 8px;
+    width: 3%;
+  }
   .carouselDiv div {
     width: 100%;
     margin-top: 7%;
@@ -23129,16 +23159,20 @@ nav .btn:hover {
   border: 1px solid rgba(205, 164, 93, 0.6549019608);
   border-radius: 20px;
   width: 60%;
+  padding-right: 10%;
   height: 20%;
   background-color: #27251f;
+  z-index: -1;
 }
 
 .btnInput {
   border: 1px solid #cda45d;
   border-radius: 20px;
   height: 20%;
+  margin-right: 10%;
   background-color: #cda45d;
   color: white;
+  z-index: 0;
 }
 
 input:hover {
