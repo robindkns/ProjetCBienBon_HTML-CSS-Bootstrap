@@ -23081,19 +23081,16 @@ nav .btn:hover {
 .boxFooter {
   background-color: #0d0b09;
   padding: 4%;
-  height: 350px;
   width: 100%;
-  display: flex;
-  gap: 12%;
+  display: grid;
+  grid-template-columns: 25% 20% 20% 30%;
+  gap: 2%;
 }
 .boxFooter a {
   text-decoration: none;
 }
 .boxFooter a:hover {
   color: #cda45d !important;
-}
-.boxFooter ul {
-  padding: 10%;
 }
 .boxFooter ul li {
   list-style-type: ">  ";
@@ -23109,6 +23106,7 @@ nav .btn:hover {
 .boxFooter h4, .boxFooter .h4 {
   color: white;
   font-family: "Playfair Display", serif;
+  margin-bottom: 5%;
 }
 .boxFooter h3, .boxFooter .h3 {
   color: white;
@@ -23122,7 +23120,7 @@ nav .btn:hover {
 .boxFooter div i {
   margin-right: 5%;
   background-color: #27251f;
-  padding: 8%;
+  padding: 3%;
   border-radius: 50%;
   font-size: 15px;
 }
@@ -23130,7 +23128,7 @@ nav .btn:hover {
 .boxInput {
   border: 1px solid rgba(205, 164, 93, 0.6549019608);
   border-radius: 20px;
-  width: 75%;
+  width: 60%;
   height: 20%;
   background-color: #27251f;
 }
@@ -23141,7 +23139,6 @@ nav .btn:hover {
   height: 20%;
   background-color: #cda45d;
   color: white;
-  z-index: 1;
 }
 
 input:hover {
@@ -23169,10 +23166,15 @@ input:hover {
   margin: 0;
 }
 
+@media (max-width: 1023px) {
+  .boxFooter {
+    grid-template-columns: 50% 50%;
+  }
+}
 @media (max-width: 767px) {
   .boxFooter {
-    gap: 0%;
-    height: 400px;
+    grid-template-columns: 100%;
+    height: 1300px;
   }
 }
 

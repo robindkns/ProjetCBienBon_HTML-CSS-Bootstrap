@@ -1,16 +1,16 @@
 .boxFooter
     background-color: #0d0b09
     padding: 4%
-    height: 350px
     width: 100%
-    display: flex
-    gap: 12%
+    display: grid
+    grid-template-columns: 25% 20% 20% 30%
+    gap: 2%
     a
         text-decoration: none
     a:hover
         color: $ocre !important
     ul 
-        padding: 10%
+        // padding: 10%
         li
             list-style-type: ">  "
             color: white
@@ -22,6 +22,7 @@
     h4
         color: white
         font-family: 'Playfair Display', serif
+        margin-bottom: 5%
     h3
         color: white
         font-weight: 300
@@ -32,14 +33,14 @@
     div i
         margin-right: 5%
         background-color: #27251f
-        padding: 8%
+        padding: 3%
         border-radius: 50%
         font-size: 15px
 
 .boxInput
     border: 1px solid #cda45da7
     border-radius: 20px
-    width: 75%
+    width: 60%
     height: 20%
     background-color: #27251f
 
@@ -49,7 +50,6 @@
     height: 20%
     background-color: $ocre
     color: white
-    z-index: 1
     
 input:hover
     background-color: #cda45da7
@@ -71,7 +71,12 @@ input:hover
     p
         margin: 0
 
+@media (max-width: 1023px)
+    .boxFooter
+        grid-template-columns: 50% 50%
+    
+
 @media (max-width: 767px)
     .boxFooter
-        gap: 0%
-        height: 400px
+        grid-template-columns: 100%
+        height: 1300px
