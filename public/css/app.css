@@ -22584,8 +22584,6 @@ nav .btn:hover {
 }
 
 .menuTable {
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
 
@@ -22608,10 +22606,14 @@ nav .btn:hover {
   .menu {
     height: 1250px;
   }
+  .tab-pane {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   #space {
     letter-spacing: 0px;
+    font-size: 10px;
   }
   .dish {
     flex-wrap: nowrap;
