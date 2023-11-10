@@ -22611,6 +22611,9 @@ nav .btn:hover {
   .tab-pane {
     display: none;
   }
+  .menuTable {
+    grid-template-columns: auto;
+  }
 }
 @media (max-width: 767px) {
   #space {
@@ -22619,6 +22622,7 @@ nav .btn:hover {
   }
   .dish {
     flex-wrap: nowrap;
+    margin-bottom: 13%;
   }
 }
 .events {
