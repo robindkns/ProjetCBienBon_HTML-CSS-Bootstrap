@@ -41,12 +41,14 @@
     height: 0%
     width: 100%
     bottom: 0
+    z-index: 1
     transition: height 0.5s ease-out
     background: linear-gradient(to bottom, transparent 0%, black 100%)
 
 
 .chef1:hover:before 
     height: 60%
+    z-index: 0
 
 
 .chef2
@@ -62,11 +64,13 @@
     height: 0%
     width: 100%
     bottom: 0
+    z-index: 1
     transition: height 0.5s ease-out
     background: linear-gradient(to bottom, transparent 0%, black 100%)
 
 .chef2:hover:before 
     height: 60%
+    z-index: 0
 
 .chef3
     background-image: url("../img/chefs/chefs-3.jpg")
@@ -81,11 +85,14 @@
     height: 0%
     width: 100%
     bottom: 0
+    z-index: 1
     transition: height 0.5s ease-out
     background: linear-gradient(to bottom, transparent 0%, black 100%)
+    
 
 .chef3:hover:before 
     height: 60%
+    z-index: 0
 
 .chefDescription
     display: flex

@@ -22558,7 +22558,7 @@ nav .btn:hover {
   color: white;
   display: flex;
   margin-bottom: 5%;
-  width: 50%;
+  width: 100%;
 }
 .dish img {
   width: 70%;
@@ -22584,6 +22584,8 @@ nav .btn:hover {
 }
 
 .menuTable {
+  display: grid;
+  grid-template-columns: auto auto;
   width: 100%;
 }
 
@@ -22979,12 +22981,14 @@ nav .btn:hover {
   height: 0%;
   width: 100%;
   bottom: 0;
+  z-index: 1;
   transition: height 0.5s ease-out;
   background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
 .chef1:hover:before {
   height: 60%;
+  z-index: 0;
 }
 
 .chef2 {
@@ -23001,12 +23005,14 @@ nav .btn:hover {
   height: 0%;
   width: 100%;
   bottom: 0;
+  z-index: 1;
   transition: height 0.5s ease-out;
   background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
 .chef2:hover:before {
   height: 60%;
+  z-index: 0;
 }
 
 .chef3 {
@@ -23023,12 +23029,14 @@ nav .btn:hover {
   height: 0%;
   width: 100%;
   bottom: 0;
+  z-index: 1;
   transition: height 0.5s ease-out;
   background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
 .chef3:hover:before {
   height: 60%;
+  z-index: 0;
 }
 
 .chefDescription {
