@@ -22383,9 +22383,16 @@ nav .btn:hover {
   gap: 66%;
   z-index: 0;
 }
+.imgResto div {
+  transition-duration: 0.3s;
+}
 
 .imgResto:hover {
   transform: scale(1.05);
+}
+.imgResto:hover div {
+  transition-duration: 0.3s;
+  transform: scale(1.4);
 }
 
 .boxBorderResto1 {
