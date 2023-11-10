@@ -69,8 +69,8 @@ nav .btn:hover
         background-color: white
         border-radius: 50%
         z-index: 1
-        margin-left: 0.7%
-        margin-top: 0.7%
+        margin-left: 0.2%
+        margin-top: 0.2%
         font-size: 65px
         position: absolute
     .loading
@@ -81,6 +81,12 @@ nav .btn:hover
         height: 70px
         box-shadow: 0 0 0 0.2em rgba(#cca35e, 0.5)
 
+.playButton:hover
+    i
+        transform: scale(1.5)
+        background-color: none
+        transition-duration: 1s
+
 
 @media  (max-width: 1023px)
     header
@@ -89,9 +95,12 @@ nav .btn:hover
         height: 600px
     .headerText
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
         text-align: center
+        .playButton
+            margin-top: 5%
         h1
             font-size: 35px !important
     

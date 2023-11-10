@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./public/css/app.css"> 
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="header">
             
         </div>
         <nav class="navbar navbar-expand-lg w-100 fixed-top navBar">
             <div class="container-fluid">
-                <h1><a class="navbar-brand ms-5 text-light fs-3 fw-light" href="#">CBIENBON</a></h1>
+                <h1><a class="navbar-brand ms-5 text-light fs-3 fw-light" href="#home">CBIENBON</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
@@ -24,25 +24,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="dark">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active actif" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white test" aria-current="page" href="#">About</a>
+                        <a class="nav-link active text-white test" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Menu</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Events</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Gallery</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Chef</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#chef">Chef</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#contact">Contact</a>
                     </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -60,23 +60,23 @@
             <div class="playButton">
                 <!-- Button trigger modal -->
                 <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #cda45d;"></i>
+                    <i class="shadow-lg fa-solid fa-circle-play" style="color: #cda45d;"></i>
                     <div class="spinner-grow loading" role="status"></div>
                 </div>
                 
                 <!-- Modal -->
                 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cW4uZq1nvCw?si=bSVj-bfxtY_WeEWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
+                        <div class="modal-content">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cW4uZq1nvCw?si=bSVj-bfxtY_WeEWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="resto">
+    <section class="resto" id="about">
         <div class="restoBG"></div>
         <div class="restoSection">
             <div class="txtResto">
@@ -114,13 +114,13 @@
             </div>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="sousTitre"><h6>MENU</h6><div id="ligne"></div></div>
         <h1>Check Our Tasty Menu</h1>
         <div>
             <ul class="nav nav-pills py-4 mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="menuBtn active actif" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                    <button class="menuBtn active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="menuBtn" id="pills-starters-tab" data-bs-toggle="pill" data-bs-target="#pills-starters" type="button" role="tab" aria-controls="pills-starters" aria-selected="false">Starters</button>
@@ -132,232 +132,233 @@
                     <button class="menuBtn" id="pills-specialty-tab" data-bs-toggle="pill" data-bs-target="#pills-specialty" type="button" role="tab" aria-controls="pills-specialty" aria-selected="false">Specialty</button>
                 </li>
             </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active menuTable" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-                    <div class="dish" id="multiCollapseExample2">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/lobster-bisque.jpg">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active tableMenu" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                        <div class="dish" id="multiCollapseExample2">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/lobster-bisque.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Lobster Bisque</b><span id="space">.................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $5.95
+                            </div>
                         </div>
-                        <div class="txtMenu">
-                            <b>Lobster Bisque</b><span id="space">.................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                        <div class="dish" id="multiCollapseExample2">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/cake.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Crab Cake</b><span id="space">.......................................................</span><br>
+                                <span id="italic">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</span>
+                            </div>
+                            <div class="prixMenu">
+                                $7.95
+                            </div>
                         </div>
-                        <div class="prixMenu">
-                            $5.95
+                        <div class="dish" id="multiCollapseExample4">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/tuscan-grilled.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Tuscan Grilled</b><span id="space">...................................................</span><br>
+                                <span id="italic">Grilled chicken with provolone, artichoke hearts,and roasted red pesto</span>
+                            </div>
+                            <div class="prixMenu">
+                                $9.95
+                            </div>
                         </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample2">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/cake.jpg">
+                        <div class="dish" id="multiCollapseExample3">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/greek-salad.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Greek Salad</b><span id="space">.......................................................</span><br>
+                                <span id="italic">Fresh spinach, crips romaine, tomatoes and Greek olives</span>
+                            </div>
+                            <div class="prixMenu">
+                                $9.95
+                            </div>
                         </div>
-                        <div class="txtMenu">
-                            <b>Crab Cake</b><span id="space">.......................................................</span><br>
-                            <span id="italic">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</span>
+                        <div class="dish" id="multiCollapseExample4">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/lobster-roll.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Lobster Roll</b><span id="space">.......................................................</span><br>
+                                <span id="italic">Plumb lobster meat,mayo and crisp lettuce on a toasted bulky roll</span>
+                            </div>
+                            <div class="prixMenu">
+                                $12.95
+                            </div>
                         </div>
-                        <div class="prixMenu">
-                            $7.95
+                        <div class="dish" id="multiCollapseExample4">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/bread-barrel.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Bread Barrel</b><span id="space">........................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $6.95
+                            </div>
                         </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample4">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/tuscan-grilled.jpg">
+                        <div class="dish" id="multiCollapseExample3">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/caesar.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Caesar Selections</b><span id="space">..................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $8.95
+                            </div>
                         </div>
-                        <div class="txtMenu">
-                            <b>Tuscan Grilled</b><span id="space">...................................................</span><br>
-                            <span id="italic">Grilled chicken with provolone, artichoke hearts,and roasted red pesto</span>
-                        </div>
-                        <div class="prixMenu">
-                            $9.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample3">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/greek-salad.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Greek Salad</b><span id="space">.......................................................</span><br>
-                            <span id="italic">Fresh spinach, crips romaine, tomatoes and Greek olives</span>
-                        </div>
-                        <div class="prixMenu">
-                            $9.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample4">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/lobster-roll.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Lobster Roll</b><span id="space">.......................................................</span><br>
-                            <span id="italic">Plumb lobster meat,mayo and crisp lettuce on a toasted bulky roll</span>
-                        </div>
-                        <div class="prixMenu">
-                            $12.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample4">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/bread-barrel.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Bread Barrel</b><span id="space">........................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $6.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample3">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/caesar.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Caesar Selections</b><span id="space">..................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $8.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample2">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/mozzarella.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Mozzarella Stick</b><span id="space">....................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $4.95
-                        </div>
-                    </div>
-                    <div class="dish" id="multiCollapseExample3">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/spinach-salad.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Spinach Salad</b><span id="space">.......................................................</span><br>
-                            <span id="italic">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</span>
-                        </div>
-                        <div class="prixMenu">
-                            $5.95
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade menuTable" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab" tabindex="1">
-                    <div class="dish" id="pills-starters">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/lobster-bisque.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Lobster Bisque</b><span id="space">.......................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $5.95
-                        </div>
-                    </div>
-                    <div class="dish" id="pills-starters">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/cake.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Crab Cake</b><span id="space">.............................................................</span><br>
-                            <span id="italic">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</span>
-                        </div>
-                        <div class="prixMenu">
-                            $7.95
-                        </div>
-                        <div class="dish" id="pills-starters">
+                        <div class="dish" id="multiCollapseExample2">
                             <div class="imgMenu">
                                 <img src="./public/img/menu/mozzarella.jpg">
                             </div>
                             <div class="txtMenu">
-                                <b>Mozzarella Stick</b><span id="space">...................................................</span><br>
+                                <b>Mozzarella Stick</b><span id="space">....................................................</span><br>
                                 <span id="italic">Lorem, deren, trataro, filede, nerada</span>
                             </div>
                             <div class="prixMenu">
                                 $4.95
                             </div>
                         </div>
+                        <div class="dish" id="multiCollapseExample3">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/spinach-salad.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Spinach Salad</b><span id="space">.......................................................</span><br>
+                                <span id="italic">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</span>
+                            </div>
+                            <div class="prixMenu">
+                                $5.95
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade menuTable" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab" tabindex="1">
+                        <div class="dish" id="pills-starters">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/lobster-bisque.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Lobster Bisque</b><span id="space">.......................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $5.95
+                            </div>
+                        </div>
+                        <div class="dish" id="pills-starters">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/cake.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Crab Cake</b><span id="space">.............................................................</span><br>
+                                <span id="italic">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</span>
+                            </div>
+                            <div class="prixMenu">
+                                $7.95
+                            </div>
+                            <div class="dish" id="pills-starters">
+                                <div class="imgMenu">
+                                    <img src="./public/img/menu/mozzarella.jpg">
+                                </div>
+                                <div class="txtMenu">
+                                    <b>Mozzarella Stick</b><span id="space">...................................................</span><br>
+                                    <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                                </div>
+                                <div class="prixMenu">
+                                    $4.95
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade menuTable" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab" tabindex="2">
+                        <div class="dish" id="pills-salads">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/greek-salad.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Greek Salad</b><span id="space">................................................................................</span><br>
+                                <span id="italic">Fresh spinach, crips romaine, tomatoes and Greek olives</span>
+                            </div>
+                            <div class="prixMenu">
+                                $9.95
+                            </div>
+                        </div>
+                        <div class="dish" id="pills-salads">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/caesar.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Caesar Selections</b><span id="space">.....................................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $8.95
+                            </div>
+                        </div>
+                        <div class="dish" id="pills-salads">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/spinach-salad.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Spinach Salad</b><span id="space">................................................................................</span><br>
+                                <span id="italic">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</span>
+                            </div>
+                            <div class="prixMenu">
+                                $5.95
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade menuTable" id="pills-specialty" role="tabpanel" aria-labelledby="pills-specialty-tab" tabindex="3">
+                        <div class="dish" id="pills-specialty">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/tuscan-grilled.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Tuscan Grilled</b><span id="space">.............................................................................</span><br>
+                                <span id="italic">Grilled chicken with provolone, artichoke hearts,and roasted red pesto</span>
+                            </div>
+                            <div class="prixMenu">
+                                $9.95
+                            </div>
+                        </div>
+                        <div class="dish" id="pills-specialty">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/bread-barrel.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Bread Barrel</b><span id="space">..............................................................................</span><br>
+                                <span id="italic">Lorem, deren, trataro, filede, nerada</span>
+                            </div>
+                            <div class="prixMenu">
+                                $6.95
+                            </div>
+                        </div>
+                        <div class="dish" id="pills-specialty">
+                            <div class="imgMenu">
+                                <img src="./public/img/menu/lobster-roll.jpg">
+                            </div>
+                            <div class="txtMenu">
+                                <b>Lobster Roll</b><span id="space">...................................................................................</span><br>
+                                <span id="italic">Plumb lobster meat,mayo and crisp lettuce on a toasted bulky roll</span>
+                            </div>
+                            <div class="prixMenu">
+                                $12.95
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade menuTable" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab" tabindex="2">
-                    <div class="dish" id="pills-salads">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/greek-salad.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Greek Salad</b><span id="space">................................................................................</span><br>
-                            <span id="italic">Fresh spinach, crips romaine, tomatoes and Greek olives</span>
-                        </div>
-                        <div class="prixMenu">
-                            $9.95
-                        </div>
-                    </div>
-                    <div class="dish" id="pills-salads">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/caesar.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Caesar Selections</b><span id="space">.....................................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $8.95
-                        </div>
-                    </div>
-                    <div class="dish" id="pills-salads">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/spinach-salad.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Spinach Salad</b><span id="space">................................................................................</span><br>
-                            <span id="italic">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</span>
-                        </div>
-                        <div class="prixMenu">
-                            $5.95
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade menuTable" id="pills-specialty" role="tabpanel" aria-labelledby="pills-specialty-tab" tabindex="3">
-                    <div class="dish" id="pills-specialty">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/tuscan-grilled.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Tuscan Grilled</b><span id="space">.............................................................................</span><br>
-                            <span id="italic">Grilled chicken with provolone, artichoke hearts,and roasted red pesto</span>
-                        </div>
-                        <div class="prixMenu">
-                            $9.95
-                        </div>
-                    </div>
-                    <div class="dish" id="pills-specialty">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/bread-barrel.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Bread Barrel</b><span id="space">..............................................................................</span><br>
-                            <span id="italic">Lorem, deren, trataro, filede, nerada</span>
-                        </div>
-                        <div class="prixMenu">
-                            $6.95
-                        </div>
-                    </div>
-                    <div class="dish" id="pills-specialty">
-                        <div class="imgMenu">
-                            <img src="./public/img/menu/lobster-roll.jpg">
-                        </div>
-                        <div class="txtMenu">
-                            <b>Lobster Roll</b><span id="space">...................................................................................</span><br>
-                            <span id="italic">Plumb lobster meat,mayo and crisp lettuce on a toasted bulky roll</span>
-                        </div>
-                        <div class="prixMenu">
-                            $12.95
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- <p class="d-flex gap-5 justify-content-center pt-5">
                 <a class="menuBtn active actif" data-bs-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">All</a>
                 <a class="menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Starters</a>
@@ -485,7 +486,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="events">
         <div class="bgEvents"></div>
         <div class="events">
             <div class="sousTitre"><h6>EVENTS</h6><div id="ligne"></div></div>
@@ -661,7 +662,7 @@
             
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="galleryTitle">
             <div class="sousTitre"><h6>TESTIMONIALS</h6><div id="ligne"></div></div>
             <h1>Some Photos of Our Restaurant</h1>
@@ -677,7 +678,7 @@
                 <div><img src="./public/img/gallery/gallery-8.jpg" alt=""></div>
             </div>
     </section>
-    <section class="chef">
+    <section class="chef" id="chef">
         <div class="sousTitre"><h6>CHEFS</h6><div id="ligne"></div></div>
         <h1>Our Professional Chefs</h1>
         <div class="gridChef">
@@ -704,7 +705,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contactTitle">
             <div class="sousTitre"><h6>CONTACT</h6><div id="ligne"></div></div>
             <h1>Contact Us</h1>

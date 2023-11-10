@@ -1,7 +1,7 @@
 .menu
     background-color: #1a1814
     width: 100%
-    height: 900px
+    height: 100%
     padding: 5%
     h1
         font-family: 'Playfair Display', serif
@@ -18,6 +18,9 @@
 .menuBtn:hover
     color: $ocre
 
+.menuBtn:active
+    color: $ocre
+
 .menuCollapsed
     width: 100%
 
@@ -25,6 +28,7 @@
     color: white
     display: flex
     margin-bottom: 5%
+    width: 50%
     img
         width: 70%
         border-radius: 50%
@@ -43,10 +47,10 @@
     color: $ocre
     font-weight: bold
 
-// .menuTable
-//     display: grid !important
-//     width: 100% !important
-//     grid-template-columns: 50% 50% !important
+.menuTable
+    display: flex
+    flex-direction: row
+    width: 100%
 
 #space
     letter-spacing: 1px
